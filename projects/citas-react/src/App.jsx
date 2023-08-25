@@ -47,11 +47,16 @@ import ListadoPacientes from "./components/ListadoPacientes"
 import Formulario from "./components/formulario"
 function App() {
   return(
-    <>
-     <Header />
-     <Formulario />
-     <ListadoPacientes />
-    </>
+    <div className="container mx-auto mt-20"> 
+    {/* mx-auto me lo centra crea la misma margen en la derecha y en la izquierda */}
+    {/*  como me falta un pedazo de margen por abarcar me toca ponerle otra clase llamada mx(margen de izquierda a derecha, my margin arriba y abajo o mt que seria solamente magin arriva, mb,mr,ml) */}
+      <Header />
+      <div className="mt-12 md:flex "> {/* magintop me los separa un poco del titulo, el flex me los pone en la misma linea*/}
+
+      <Formulario />
+      <ListadoPacientes />
+      </div>
+    </div>
   )
 }
 

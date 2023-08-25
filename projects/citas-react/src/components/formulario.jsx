@@ -25,8 +25,12 @@
 
 const formulario = () => {
   return (
-    <div>
-      <h1>Formulario</h1>
+    <div className="md:w-1/2 lg:w-2/5"> {/* md es el media query para tamaño mediano lg es el media query para pantallas mas grandes 2/5 es el 40%*/}
+      <h2 className="font-black text-3xl text-center">Seguimiento Pacientes</h2>
+      <p className="mt-5 text-lg text-center">
+        Añade Pacientes y {''}
+        <span className="text-indigo-600 font-bold">Administralos</span>
+      </p>
     </div>
   )
 }
