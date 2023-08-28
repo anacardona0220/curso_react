@@ -31,6 +31,11 @@ const formulario = () => {
         Añade Pacientes y {''}
         <span className="text-indigo-600 font-bold">Administralos</span>
       </p>
+      <form>
+        <div>
+          
+        </div>
+      </form>
     </div>
   )
 }
