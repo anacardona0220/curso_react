@@ -22,11 +22,15 @@
 // export default formulario
 
 // import React from 'react'
-import {useState} from 'react'
-const [cliente, setCliente] = useState({})
-// //cliente es la variable que contiene el valor del estado,setcliente es el modificardor es la funcion que va a modificar la variable cliente(ninguna otro cliente)useState valor inicial es decir esta vacio, se ira llenando cuando se valla ejecutando la aplicacion, cuando se den cliemntes de alta o asi. con los corchetes estamos extrallendo tanto cliente como setcliente de la funcion de useState, es un distroctoring de arreglos y lo que esta adentro de usestate es el valor inicial que en este caso es un objeto, puedo tener multiples useState por componente
+import {useState, useEffect} from 'react';
 
 const formulario = () => {
+
+  const [nombre, setNombre] = useState('')
+
+
+// //cliente es la variable que contiene el valor del estado,setcliente es el modificardor es la funcion que va a modificar la variable cliente(ninguna otro cliente)useState valor inicial es decir esta vacio, se ira llenando cuando se valla ejecutando la aplicacion, cuando se den cliemntes de alta o asi. con los corchetes estamos extrallendo tanto cliente como setcliente de la funcion de useState, es un distroctoring de arreglos y lo que esta adentro de usestate es el valor inicial que en este caso es un objeto, puedo tener multiples useState por componente
+
   return (
     <div className="md:w-1/2 lg:w-2/5"> {/* md es el media query para tamaño mediano lg es el media query para pantallas mas grandes 2/5 es el 40%*/}
       <h2 className="font-black text-3xl text-center">Seguimiento Pacientes</h2>
